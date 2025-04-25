@@ -1,26 +1,26 @@
 #!/bin/bash
 
-echo "Atualizando o sistema..."
+echo -n "\n\nAtualizando o sistema...\n\n"
 apt-get update
 apt-get upgrade -y
 
-echo "Instalando o Apache..."
+echo -n "\n\nInstalando o Apache...\n\n"
 apt-get install apache2 -y
 
-echo "Instalando o unzip..."
+echo -n "\n\nInstalando o unzip...\n\n"
 apt-get install unzip -y
 
-echo "Baixando os arquivos de 'linux-site-dio' na pasta /tmp"
+echo -n "\n\nBaixando os arquivos de 'linux-site-dio' na pasta /tmp\n\n"
 wget -P /tmp https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 
-echo "Descompactando..."
+echo -n "\n\nDescompactando...\n\n"
 unzip /tmp/main.zip -d /tmp
 
-echo "Copiando o website para /var/www/html"
+echo -n "\n\nCopiando o website para /var/www/html\n\n"
 rm /var/www/html/index.html
 cp -Rv /tmp/linux-site-dio-main /var/www/html
 
-echo "Finalizado."
-echo "A página web pode ser acessada através do ip abaixo: "
+echo -n "\n\nFinalizado.\n\n"
+echo -n "\n\nA página web pode ser acessada através do ip abaixo: \n"
 ip a
 
