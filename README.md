@@ -13,6 +13,8 @@ O script em questão está no arquivo `setup_web_server.sh` e é responsável po
 - Baixar os arquivos do website do repositório do professor Bonatti
 - Inserir os arquivos no diretório do Apache (/var/www/html)
 
+O script deve ser executado como root.
+
 *O unzip será utilizado para descompactar os arquivos baixados
 
 
