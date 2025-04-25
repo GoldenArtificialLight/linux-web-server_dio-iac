@@ -18,7 +18,7 @@ unzip /tmp/main.zip -d /tmp
 
 echo -e "\n\nCopiando o website para /var/www/html\n\n"
 rm /var/www/html/index.html
-cp -Rv /tmp/linux-site-dio-main /var/www/html
+cp -Rv /tmp/linux-site-dio-main/* /var/www/html
 
 echo -e "\n\nFinalizado.\n\n"
 echo -e "\n\nA página web pode ser acessada através do ip abaixo: \n"
