@@ -2,7 +2,7 @@
 
 echo "Atualizando o sistema..."
 apt-get update
-apt-get upgrade
+apt-get upgrade -y
 
 echo "Instalando o Apache..."
 apt-get install apache2 -y
@@ -18,7 +18,7 @@ unzip /tmp/main.zip -d /tmp
 
 echo "Copiando o website para /var/www/html"
 rm /var/www/html/index.html
-cp -R /tmp/linux-site-dio-main /var/www/html
+cp -Rv /tmp/linux-site-dio-main /var/www/html
 
 echo "Finalizado."
 echo "A página web pode ser acessada através do ip abaixo: "
